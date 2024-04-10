@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Youtube Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- navbar start  -->
+    <nav class="navbar">
+      <div class="navbar__toggle-btn">
+        <i class="bars fa-solid fa-bars"></i>
+      </div>
+      <img src="img/logo.PNG" class="logo" alt="" />
+      <div class="navbar__search-box">
+        <input type="text" class="search-bar" placeholder="search" />
+        <button class="search-btn"><img src="img/search.PNG" alt="" /></button>
+      </div>
+      <div class="navbar__user-options">
+        <img src="img/video.PNG" class="icon" alt="" />
+        <img src="img/grid.PNG" class="icon" alt="" />
+        <img src="img/bell icon.png" class="icon" alt="" />
+        <div class="user-dp">
+          <img src="img/profile-pic.jpeg" alt="" />
+        </div>
+      </div>
+    </nav>
+
+    <!-- sidebar start  -->
+    <div class="sidebar">
+      <a href="#" class="sidebar__links active"
+        ><img src="img/yhome.png" alt="" />home</a
+      >
+      <a href="#" class="sidebar__links"
+        ><img src="img/yexplore.png" alt="" />explore</a
+      >
+      <a href="#" class="sidebar__links"
+        ><img src="img/shorts.png" alt="" />Shorts</a
+      >
+      <a href="#" class="sidebar__links"
+        ><img src="img/ysubscription.png" alt="" />subscription</a
+      >
+      <hr class="seperator" />
+      <a href="#" class="sidebar__links"
+        ><img src="img/ylibrary.png" alt="" />library</a
+      >
+      <a href="#" class="sidebar__links"
+        ><img src="img/yhistory.png" alt="" />history</a
+      >
+      <a href="#" class="sidebar__links"
+        ><img src="img/yourvideo.PNG" alt="" />your video</a
+      >
+      <a href="#" class="sidebar__links"
+        ><img src="img/watchlater.PNG" alt="" />watch leater</a
+      >
+      <a href="#" class="sidebar__links"
+        ><img src="img/likevideo.PNG" alt="" />like video</a
+      >
+
+      <a href="#" class="sidebar__links"
+        ><img src="img/show more.PNG" alt="" />show more</a
+      >
+    </div>
+
+    <!-- filter buttons starts  -->
+
+    <div class="filters">
+      <button class="filters__options active">all</button>
+      <button class="filters__options">Arijit Singh</button>
+      <button class="filters__options">Rohit Sharma</button>
+      <button class="filters__options">Virat Kohli</button>
+      <button class="filters__options">T series</button>
+      <button class="filters__options">marvel</button>
+      <button class="filters__options">javascript</button>
+      <button class="filters__options">Cricket</button>
+      <button class="filters__options">World Cup 2023</button>
+      <button class="filters__options">Ind vs Eng</button>
+      <button class="filters__options">Bollywood</button>
+    </div>
+
+    <!-- video container starts  -->
+    <div class="video-container">
+      <!-- <div class="video">
+        <img src="img/profile-pic.jpeg" class="thumbnail" alt="" />
+        <div class="content">
+          <img src="img/profile-pic.jpeg" class="channel-icon" alt="" />
+          <div class="info">
+            <h4 class="title">My Youtube Clone | Enjoy the day</h4>
+            <p class="channel-name">Rahul Mamoria</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+
+    <div class="pagination">
+      <button id="prevPageBtn" onclick="changePage(-1)" disabled>
+       &leftarrow; Previous
+      </button>
+      <span id="currentPage">Page 1</span>
+      <button id="nextPageBtn" onclick="changePage(1)">Next &rightarrow;</button>
+    </div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
